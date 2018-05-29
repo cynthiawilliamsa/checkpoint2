@@ -32,6 +32,13 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.about a {
+    color: #104056;  
+}
+.about a:hover {
+    font-style: italic;
+}
 /*container for img*/
 .photo {
     display: none;
