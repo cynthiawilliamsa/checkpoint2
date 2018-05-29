@@ -66,7 +66,7 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        grid-template: 80px 400px 100px / 50% 20% 30%;
+        grid-template: 20% 60% 30% / 40% 30% 30%;
     }
     /*header*/
     .name {
@@ -76,7 +76,7 @@
         margin-top: 15px;
         font-size: 40px;
     }
-    /*content container resizing for tablet*/
+    /*content container resizing for tablet/desktop*/
     .about {
         grid-row: 2/ span 3;
         grid-column: 1/span 2;           
@@ -90,52 +90,55 @@
     }
 
     .about h3 {
-        font-size: 24px;
+        font-size: 26px;
     }
     .about p {
-        width: 60%;
+        margin-top: 5%;
+        width: 75%;
         font-size: 16px;
         line-height: 1.8em;
     }
-    /*photo container resize for tablet*/
+    /*photo container resize for tablet/desktop*/
     .photo {
         display: inline-block;
-        grid-row: 2/span 2;
-        grid-column: 2 / span 2;         
+        grid-row: 2/span 1;
+        grid-column: 3 / span 1;         
         justify-content: center; 
-        margin-top: 15%;       
+        margin-top: 8%;       
     } 
     img {
-        display: inline;        
-        max-width: 55%;              
+        display: inline-block;  
+        max-width: 100%;                        
         border-radius: 25px;            
     }
-    /*social resize and changes for tablet*/
+    /*social resize and changes for desktop*/
     .social {
         grid-column: 3/span 1;
-        grid-row: 3;    
+        grid-row: 3 / span 1;    
     }
     .flex {
         display: flex;        
-        flex-direction: row;
-        margin-top: 50px; 
-        margin-left: 25px;             
+        flex-direction: row; 
+        justify-content: space-around;       
+                   
     }
     .fa-github, .fa-linkedin-in, .fa-twitter { 
-
-        font-size: 40px;        
+        font-size: 40px;
+        padding-right: 5px;        
     }   
  }
+/*Large screen styling all font size changes*/
+@media only screen and (min-width:1375px) {
 
- @media (min-width:922px) {
-    /* .container {
-        display: grid;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        grid-template: 80px 500px 160px / 50% 20% 30%;
+    .name h1, .fa-linkedin-in, .fa-github, .fa-twitter {
+        font-size: 55px;
+    }  
+    .about h3 {
+        margin-top: 5%;
+    }  
+    .about p {
+        font-size: 20px;
+    }
+}
 
-     } */
- }
-
-    
+   
